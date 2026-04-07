@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A.N.G.E.L.</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+    </style>
+</head>
+<body>
+    <!-- Side Navigation Dots -->
+    <div class="side-nav">
+        <a href="#home" class="dot active"></a>
+        <a href="#whoami" class="dot"></a>
+        <a href="#whatcanido" class="dot"></a>
+        <a href="#usecases" class="dot"></a>
+    </div>
+
+    <!-- Header Section -->
+    <header id="home" class="hero-header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                <img src="Assets/LOGO.png" alt="A.N.G.E.L. Logo" />
+                
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+            </ul>
+        </nav>
+        
+
+        <section class="angel" >
+            <model-viewer
+                id="viewer"
+                class="floating-model"
+                src="assets/models/DrehungModell.glb"
+                alt="3D Modell von A.N.G.E.L."
+                autoplay
+                scale="5.5 5.5 5.5"
+                shadow-intensity="0.5"
+                animation-name="Running"
+                camera-orbit="90deg 90deg 1m"
+                style="width: 100%; height: 400px;"
+                disable-zoom
+                interaction-prompt="none"
+               
+            >
+
+
+            </model-viewer>
+        
+        </section>
+
+        <div class="hero-content">
+            <h1>Hello, I'm A.N.G.E.L.</h1>
+            <p>The assisting neutral guardian of enhanced lifecare</p>
+            <a href="#whoami" class="scroll-down">&#x25BC;</a>
+        </div>
+
+    </header>
+
+    <section id="whoami" class="snap-section">
+         <div class="whoami-container">
+            
+            <div class="whoami-text">
+                <h2 class="überschrift">Who am I?</h2>
+                <p>
+                    I’m not just a robot – I’m your personal health companion. 
+                    Inspired by the loyal nature of a medical assistance dog, I was created to make everyday life easier for people with special health needs. 
+                    I’m small, round, and friendly by design – compact and mobile, always moving quietly and blending naturally into your life without being intrusive. 
+                    <br>
+                    <br>
+                    Whether you’re at home, in a care facility, or traveling the world, I’ll be right there with you, wherever you need me.
+                    My mission? To care for you. To keep you safe. To support you. 
+                    And to do it all in a way that’s not only practical, but also brings you comfort and peace of mind.
+                </p>
+            </div>
+            
+            <div class="whoami-video">
+                <video src="assets/hoffentlich freigestellt.webm" autoplay muted loop playsinline
+                style="width: 1000%; height: auto; display: block; margin: 0 auto;"></video>
+            </div>
+
+         </div>
+   
+    </section>
+
+    <section id="whatcanido" class="snap-section">
+        <div class="whatcanido-container">
+        
+            <div class="whatcanido-model">
+            <model-viewer
+                    id="viewer"
+                    src="assets/models/ohneDrehung.glb"
+                    alt="3D Modell von A.N.G.E.L."
+                    camera-controls
+                    interaction-prompt="auto"
+                    interaction-prompt-threshold="2000"
+                    scale="5.5 5.5 5.5"
+                    shadow-intensity="0.5"
+                    animation-name="Running"
+                    camera-orbit="90deg 90deg 1m"
+                    exposure="1" environment-image="neutral"
+
+                    >
+                
+            </model-viewer>
+            </div>
+
+            <div class="whatcanido-text">
+                <h2 class="überschrift">What can I do?</h2>
+                <p>
+                    I’m equipped with a wide range of sensors that monitor your vital signs in real time – including heart rate, oxygen levels, glucose, and skin conductivity. 
+                    I also track environmental factors like air quality, temperature, and noise. With the help of a smart wristband, I create a detailed picture of your physical state. 
+                    I use machine learning to recognize patterns and adapt to your individual needs. 
+                    <br>
+                    <br>
+                    In critical situations, I act instantly: I can administer insulin or alert medical services if you’re unable to respond. 
+                    I also detect early signs of psychological stress, like panic attacks or dizziness, and respond with calming voice guidance or by bringing you water or medication.
+                    <br>
+                    <br>
+                    My two robotic arms are both precise and gentle – allowing me to pick up and deliver small objects like medicine, bottles, or snacks. 
+                    You can control me easily using voice or gestures. I’m always ready – with emergency protocols, GPS tracking, and direct connection to medical support.
+                
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="usecases">
+
+        <h2 class="überschrift_usecases">Use Cases</h2>
+
+
+        <div class="slider-container">
+            <button class="slider-btn prev">&#8249;</button>
+            <div class="slider-track">
+                <div class="use-card">
+                    <img src="assets/Angel_Illustrationen_frei_4.png" alt="Scan 1">
+                    <p>I scan your food to prevent allergic reactions </p>
+                </div>
+                <div class="use-card">
+                    <img src="assets/Angel_Illustrationen_frei_2.png" alt="Scan 2">
+                    <p>I constantly monitor your vital signs</p>
+                </div>
+                <div class="use-card">
+                    <img src="assets/Angel_Illustrationen_frei_1.png" alt="Scan 3">
+                    <p>I bring you your medicine, even in tricky situations</p>
+                </div>
+                <div class="use-card">
+                    <img src="assets/Angel_Illustrationen_5.png" alt="Scan 4">
+                    <p>If you fall, I’ll help you get back up</p>
+                </div>
+                <div class="use-card">
+                    <img src="assets/Angel_Illustrationen_6.png" alt="Scan 5">
+                    <p>And if you can’t respond, I’ll call for help immediately</p>
+                </div>
+            </div>
+            <button class="slider-btn next">&#8250;</button>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <p>&copy; A.N.G.E.L.</p>
+        <p><a href="impressum.html">Imprint</a> </p>
+    </footer>
+
+    
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="skript.js"></script>
+</body>
+</html>
